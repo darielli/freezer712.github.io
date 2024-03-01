@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235628699.png">
 <meta property="og:image" content="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235844994.png">
 <meta property="article:published_time" content="2023-03-19T12:24:44.000Z">
-<meta property="article:modified_time" content="2023-03-19T12:39:59.579Z">
+<meta property="article:modified_time" content="2023-03-19T12:40:00.000Z">
 <meta property="article:author" content="freezer712">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="hexo">
@@ -50,146 +50,148 @@ var CONFIG = {
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/reading/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Welcome to freezer712's blog!</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">利用github与hexo搭建个人博客网站</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2023-03-19</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2023-03-19</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>本文主要介绍如何通过github和hexo框架，不购买服务器资源实现部署个人博客</p>
 <span id="more"></span>
 
-        <h2 id="一-安装nodejs"   >
-          <a href="#一-安装nodejs" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#一-安装nodejs"></a> 一、安装nodejs</h2>
-      
-<p>可在git命令行通过以下命令检查本地是否安装了nodejs和npm</p>
+
+
+
+        <h2 id="一、安装nodejs"   >
+          <a href="#一、安装nodejs" class="heading-link"><i class="fas fa-link"></i></a><a href="#一、安装nodejs" class="headerlink" title="一、安装nodejs"></a>一、安装nodejs</h2>
+      <p>可在git命令行通过以下命令检查本地是否安装了nodejs和npm</p>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br></pre></td></tr></table></div></figure>
+
 <p>出现以下内容说明已安装，如果未安装，可以通过<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://nodejs.org/en/" >官网</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 提供的安装工具自行安装。</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224231949776.png"  alt="image-20230224231949776" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224231949776.png"  alt="image-20230224231949776">
       </p>
 
-        <h2 id="二-安装和初始化hexo"   >
-          <a href="#二-安装和初始化hexo" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#二-安装和初始化hexo"></a> 二、安装和初始化hexo</h2>
-      
-<ol>
+        <h2 id="二、安装和初始化hexo"   >
+          <a href="#二、安装和初始化hexo" class="heading-link"><i class="fas fa-link"></i></a><a href="#二、安装和初始化hexo" class="headerlink" title="二、安装和初始化hexo"></a>二、安装和初始化hexo</h2>
+      <ol>
 <li>使用如下命令安装hexo</li>
 </ol>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></div></figure>
+
 <p>（如果npm速度较慢可以换国内源）</p>
 <ol start="2">
 <li>初始化hexo</li>
 </ol>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></div></figure>
+
 <ol start="3">
 <li>本地运行</li>
 </ol>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></div></figure>
-<p>如果出现提示<code>ERROR Try running: 'rm -rf node_modules &amp;&amp; npm install --force'</code>，运行该命令，运行完成后重新运行上述命令</p>
-<p>出现以下结果，表示运行正常，可在浏览器中访问给定网址，按&quot;ctrl+c&quot;可停止本地运行</p>
+
+<p>如果出现提示<code>ERROR Try running: &#39;rm -rf node_modules &amp;&amp; npm install --force&#39;</code>，运行该命令，运行完成后重新运行上述命令</p>
+<p>出现以下结果，表示运行正常，可在浏览器中访问给定网址，按”ctrl+c”可停止本地运行</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233040783.png"  alt="image-20230224233040783" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233040783.png"  alt="image-20230224233040783">
       </p>
 <p>页面内容如下</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233353905.png"  alt="image-20230224233353905" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233353905.png"  alt="image-20230224233353905">
       </p>
 
-        <h2 id="三-创建github仓库并上传代码"   >
-          <a href="#三-创建github仓库并上传代码" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#三-创建github仓库并上传代码"></a> 三、创建github仓库并上传代码</h2>
-      
-<ol>
-<li>登录<a href="github.com">github</a>, 点击右上角&quot;+“，选择&quot;new repository”，按如下内容创建仓库</li>
+        <h2 id="三、创建github仓库并上传代码"   >
+          <a href="#三、创建github仓库并上传代码" class="heading-link"><i class="fas fa-link"></i></a><a href="#三、创建github仓库并上传代码" class="headerlink" title="三、创建github仓库并上传代码"></a>三、创建github仓库并上传代码</h2>
+      <ol>
+<li>登录<a href="github.com">github</a>, 点击右上角”+”，选择”new repository”，按如下内容创建仓库</li>
 </ol>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233938038.png"  alt="image-20230224233938038" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224233938038.png"  alt="image-20230224233938038">
       </p>
 <ol start="2">
-<li>
-<p>安装hexo-deployer-git</p>
+<li><p>安装hexo-deployer-git</p>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></div></figure>
+
+
 </li>
-<li>
-<p>修改本地hexo目录下_config.yml文件，将最底下</p>
+<li><p>修改本地hexo目录下_config.yml文件，将最底下</p>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;&#x27;</span><br></pre></td></tr></table></div></figure>
+
 <p>修改为</p>
 <figure class="highlight yaml"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="string">type:git</span></span><br><span class="line">  <span class="string">repository:https://github.com/freezer712/freezer712.github.io.git</span></span><br><span class="line">  <span class="string">branch:main</span></span><br></pre></td></tr></table></div></figure>
+
+
 </li>
-<li>
-<p>创建仓库后，在本地hexo目录下用git命令行执行以下命令上传代码（如果未配置ssh可使用personal access token来push代码，获取流程可参考<a id="token"><a href="#token">token获取方法</a></a></p>
+<li><p>创建仓库后，在本地hexo目录下用git命令行执行以下命令上传代码（如果未配置ssh可使用personal access token来push代码，获取流程可参考<a id="token"><a href="#token">token获取方法</a></a></p>
 </li>
 </ol>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#初始化本地仓库</span><br><span class="line">git init</span><br><span class="line">#添加远程git地址，jevonk是我的gitlab用户名</span><br><span class="line">git remote add origin https://github.com/freezer712/freezer712.github.io.git</span><br><span class="line">#添加需要管理文件</span><br><span class="line">git add .</span><br><span class="line">#提交内容</span><br><span class="line">git commit  -m &quot;init&quot;</span><br><span class="line">#修改默认分支名master为main</span><br><span class="line">git branch -m master main</span><br><span class="line">#强行推送到远程, 注意可能遇到主分支是受保护的，无法推送。自行百度处理</span><br><span class="line">git push -f origin main</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
 <p>（使用token时）弹出下面界面可直接cancel</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000325295.png"  alt="image-20230225000325295" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000325295.png"  alt="image-20230225000325295">
       </p>
 <p>依次弹出如下页面，输入github网站用户名和<strong>token</strong></p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000454714.png"  alt="image-20230225000454714" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000454714.png"  alt="image-20230225000454714">
       </p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000444761.png"  alt="image-20230225000444761" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225000444761.png"  alt="image-20230225000444761">
       </p>
 <p>出现下图内容表示代码已经push到github仓库</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225001057788.png"  alt="image-20230225001057788" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225001057788.png"  alt="image-20230225001057788">
       </p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225001133409.png"  alt="image-20230225001133409" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230225001133409.png"  alt="image-20230225001133409">
       </p>
 
-        <h2 id="四-在本地写博客并发布"   >
-          <a href="#四-在本地写博客并发布" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#四-在本地写博客并发布"></a> 四、在本地写博客并发布</h2>
-      
-<ol>
+        <h2 id="四、在本地写博客并发布"   >
+          <a href="#四、在本地写博客并发布" class="heading-link"><i class="fas fa-link"></i></a><a href="#四、在本地写博客并发布" class="headerlink" title="四、在本地写博客并发布"></a>四、在本地写博客并发布</h2>
+      <ol>
 <li>创建博客</li>
 </ol>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#该命令会创建一片名为&quot;first blog&quot;的博客，在/source/_posts目录下生成一个&quot;first-blog.md&quot;文件，可以将已写好博客替换进去</span></span><br><span class="line">$ hexo new <span class="string">&quot;first blog&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
 <ol start="2">
-<li>
-<p>生成静态文件</p>
+<li><p>生成静态文件</p>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#清理缓存文件，是一个比较常用的命令</span></span><br><span class="line">$ hexo clean</span><br><span class="line"><span class="comment"># 重新生成文件</span></span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></div></figure>
 </li>
-<li>
-<p>本地运行(访问<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C" >http://localhost:4000/，</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 使用Ctrl+C关闭)</p>
+<li><p>本地运行(访问<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C" >http://localhost:4000/，</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 使用Ctrl+C关闭)</p>
 <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#本地运行查看效果</span></span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></div></figure>
 </li>
-<li>
-<p>上传</p>
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 上传</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></div></figure>
-</li>
+<li><p>上传</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 上传</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></div></figure></li>
 </ol>
 
-        <h2 id="utils"   >
-          <a href="#utils" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#utils"></a> Utils</h2>
-      
-<p><a id="token">token获取方法</a></p>
+        <h2 id="Utils"   >
+          <a href="#Utils" class="heading-link"><i class="fas fa-link"></i></a><a href="#Utils" class="headerlink" title="Utils"></a>Utils</h2>
+      <p><a id="token">token获取方法</a></p>
 <ol>
 <li>github网站点击右上角头像，点击settings</li>
 </ol>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235114197.png"  alt="image-20230224235114197" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235114197.png"  alt="image-20230224235114197">
       </p>
 <ol start="2">
-<li>左边栏最底下点击&quot;Developer settings&quot;， 点击&quot;Personal access tokens&quot;,，点击&quot;Tokens(classic)“, 页面右上部点击&quot;Generate new token”, “Generate new token(classic)”,按下图填入信息
+<li>左边栏最底下点击”Developer settings”， 点击”Personal access tokens”,，点击”Tokens(classic)”, 页面右上部点击”Generate new token”, “Generate new token(classic)”,按下图填入信息
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235628699.png"  alt="image-20230224235628699" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235628699.png"  alt="image-20230224235628699">
       </li>
 </ol>
-<p>点击&quot;generate token&quot;，即可获取token（请注意保存，不会再显示）</p>
+<p>点击”generate token”，即可获取token（请注意保存，不会再显示）</p>
 <p>
         <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235844994.png"  alt="image-20230224235844994" />
+          src="/images/loading.svg" data-src="https://freezer712.oss-cn-hangzhou.aliyuncs.com/blog-img/image-20230224235844994.png"  alt="image-20230224235844994">
       </p>
 <p><a href="#token_back">点我快速返回！</a></p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://blog.freezer712.top">freezer712</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://blog.freezer712.top/2023/03/19/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">https://blog.freezer712.top/2023/03/19/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://blog.freezer712.top/tags/github/">github</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://blog.freezer712.top/tags/hexo/">hexo</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2023/03/29/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%982022/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">力扣刷题2022</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2023/03/19/hello-world/"><span class="paginator-prev__text">Hello</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="utterances-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85nodejs"><span class="toc-number">1.</span> <span class="toc-text">
-           一、安装nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96hexo"><span class="toc-number">2.</span> <span class="toc-text">
-           二、安装和初始化hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93%E5%B9%B6%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">
-           三、创建github仓库并上传代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83"><span class="toc-number">4.</span> <span class="toc-text">
-           四、在本地写博客并发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#utils"><span class="toc-number">5.</span> <span class="toc-text">
-           Utils</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/assets/stun-logo.png" alt="avatar"></div><p class="sidebar-ov-author__text">小懒蛋子冲冲冲</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/freezer712" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1945652814&amp;website=www.oicqzone.com" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a><a class="sidebar-ov-social-item" href="mailto:freezer7121@gmail.com" target="_blank" rel="noopener" data-popover="Gmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fa da-solid fa-envelope"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023</span><span class="footer__devider"></span><span>All Rights Reserved.</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v6.3.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://blog.freezer712.top">freezer712</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://blog.freezer712.top/2023/03/19/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">https://blog.freezer712.top/2023/03/19/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://blog.freezer712.top/tags/github/">github</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://blog.freezer712.top/tags/hexo/">hexo</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2023/03/28/hello-world/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">Hello</span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="utterances-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85nodejs"><span class="toc-number">1.</span> <span class="toc-text">
+          一、安装nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96hexo"><span class="toc-number">2.</span> <span class="toc-text">
+          二、安装和初始化hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93%E5%B9%B6%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">
+          三、创建github仓库并上传代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83"><span class="toc-number">4.</span> <span class="toc-text">
+          四、在本地写博客并发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Utils"><span class="toc-number">5.</span> <span class="toc-text">
+          Utils</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/assets/stun-logo.png" alt="avatar"></div><p class="sidebar-ov-author__text">小懒蛋子冲冲冲</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/freezer712" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1945652814&amp;website=www.oicqzone.com" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a><a class="sidebar-ov-social-item" href="mailto:freezer7121@gmail.com" target="_blank" rel="noopener" data-popover="Gmail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fa da-solid fa-envelope"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023~2024</span><span class="footer__devider"></span><span>All Rights Reserved.</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v6.3.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="120" alpha="0.6" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 
